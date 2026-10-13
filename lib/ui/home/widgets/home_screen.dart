@@ -6,7 +6,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      drawer: Drawer(
+        child: Column(mainAxisAlignment: .center, children: [CGRThemeWidget()]),
+      ),
+      appBar: AppBar(title: Text('CFM User')),
       body: Center(child: Text('CFM User')),
     );
   }
